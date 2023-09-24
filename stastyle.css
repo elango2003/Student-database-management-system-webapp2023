@@ -1,0 +1,110 @@
+*{
+    margin:0; padding:0; box-sizing: border-box; font-family:sans-serif;
+}
+.main-div{
+    width:100%; height:100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center-div{
+    width: 90%;
+    height: 80vh;
+    background: -webkit-linear-gradient(left,#e25d94,#f389f7,#92f6fa,#9bedf3);
+    padding:20px 0 0 0;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.03);
+    border-radius: 10px;
+}
+h1{
+    
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.03);
+    border-radius: 5px;
+    margin: auto;   
+}
+th,td{
+    border: 1px solid #f2f2f2;
+    padding: 8px 30px;
+    text-align: center;
+    color: grey;
+}
+th{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+td{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.email{
+    text-transform: lowercase;
+}
+
+
+.fa{
+    font-size: 18px;
+}
+.fa-edit{color: #63c76a;}
+.fa-trash{color:#ff0000;}
+
+#search form input[Type="submit"]{ 
+    border-radius: 25px 0 0 25px;
+    background: linear-gradient(rgba(0,0,0,0.5),skyblue);
+    border: 1px solid black;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    width: 90px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+#search form input[Type="text"]{
+    border-radius:0 25px 25px 0;
+    text-align: left;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    width: 125px;
+    padding-left: 5px;
+}
+
+#search{
+    margin-right: -900px;
+    margin-top: -60px;
+}
+.export-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.btn{
+    padding:10px 20px;
+    background-color: rgb(85, 250, 200);
+    
+}
+.btn a{
+    color: #000000;
+    font-family:sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    background: linear-gradient(to left,violet,orange);
+    
+}
+#main{
+    width: 30%;
+    background: linear-gradient(to left,violet,orange);
+}
+
+   
+   

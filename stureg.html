@@ -1,0 +1,469 @@
+<html>
+    <head>
+        <title>STUDENT FORM</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+ 
+ #bd{
+background-color:whitesmoke;
+overflow-x: hidden;
+overflow-y: hidden;
+margin-bottom:50px
+}
+#bone{
+margin-top:40px;
+
+padding:10;
+height:70%;
+width:100%;
+   border-style: solid;
+   border-width: 1px;
+box-shadow: 5px 5px 5px 5px grey;  
+ overflow-y: scroll;          
+}
+
+
+.img{
+width: 110px;
+height:110px;
+margin:1;
+}
+#headli1{
+color: lightgoldenrodyellow;
+background: linear-gradient(rgba(0,0,0,0.5),skyblue);
+height: 15%;
+padding-top: 17px;
+font-weight: 700;
+font-size: 50px;
+    text-align: center;
+    font-family:'Times New Roman';
+}
+
+#ho{
+margin-top:50;
+color:rgb(92, 92, 92);
+  font-weight:900;
+font-size:30;
+    text-align: center;
+    font-family: san serif;
+}
+#ht{
+color:lightgoldenrodyellow;;
+font-weight:900;
+    text-align: center;
+    font-family:  serif;
+}
+        </style>
+    </head>
+
+    <body id="bd" class="w-auto p-3" style="background-color: #eee;">
+    
+<h1  id="headli1"> UNIVERSITY COLLEGE OF ENGINEERING ARNI</h1>
+<img src="logo.png" alt="img" align="left" class="img" >
+<img src="logo.png" alt="img" align="right" class="img" >
+<h3 id="ho">AFFLIATED COLLEGE OF ANNA UNIVERSITY,CHENNAI</h3>
+
+<div id="bone" class="p-3 mb-2 bg-info text-dark" class="shadow-lg p-3 mb-5 bg-body rounded" >
+  <h2 id="ht">PLACEMENT FORM (STUDENTS)</h2>
+  <p><span style="color: red;">* Required Field</span></p>
+<form method="post" autocomplete="off" name="google-sheet" action="placement.php">
+ 
+  <div class="form-group">
+      <label class="control-label text-dark" for="name">Name</label><span style="color: red;"> * </span>
+      <input type="text" class="form-control"  placeholder="Enter name ( In CAPITAL ) (ex : SARUN A) " case="upper" value="" required name="name" required class="form-control input-sm">
+    </div>
+           
+     <div class="form-group">
+<label class="control-label text-dark" for="gender">Gender</label><span style="color: red;"> * </span>
+<select required name="gender" required class="form-control input-sm">
+            
+<option value="MALE">Male</option>
+<option value="FEMALE">Female</option>
+<option value="OTHERS">Others</option>
+ </select>
+</div>
+  
+  <div class="form-group">
+<label class="control-label text-dark" for="regno" >REGISTER NUMBER</label><span style="color: red;"> * </span>
+        <input type="text"  name="regno" value="" min="513300000000" max="513399999999" maxlength="12" class="form-control" required class="form-control input-sm" placeholder="Register Number">
+     </div>
+<div class="row">
+  <div class="col">
+     <div class="form-group">
+<label class="control-label text-dark" for="dept">DEPARTMENT</label><span style="color: red;">* </span>
+<select name="dept" required class="form-control input-sm">
+            <option value="">Choose</option>
+<option value="ECE">Electronics and Communication Engineering</option>
+            <option value="CSE">Computer Science and Engineering</option>
+          <option value="EEE">Electrical and Electronics Engineering</option>
+          <option value="MECH">Mechanical Engineering</option>
+ </select>
+</div>
+</div>
+
+<div class="col">
+     <div class="form-group">
+<label class="control-label text-dark" for="dept">MEDIUM</label><span style="color: red;">* </span>
+<select name="med" required class="form-control input-sm">
+            <option value="">Choose</option>
+<option value="TAMIL">TAMIL</option>
+            <option value="ENGLISH">ENGLISH</option>
+          
+ </select>
+</div>
+</div>
+
+</div>
+
+   <div class="form-group">
+<label class="control-label text-dark" for="year">YEAR OF STUDY</label><span style="color: red;">* </span>
+<select name="year" required class="form-control input-sm">
+            <option value="">Choose</option>
+      <option value="1">First Year</option>
+        <option value="2 ">Second Year </option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option> </select>
+ </select>
+</div>
+
+   <div class="form-group">
+<label class="control-label text-dark" for="sem">SEMESTER</label><span style="color: red;"> * </span>
+<select name="sem" required class="form-control input-sm">
+            <option value="">Choose</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option> </select>
+ </select>
+</div>
+
+
+     <div class="form-group">
+         <label class="control-label text-dark" for="DOB">D.O.B</label><span style="color: red;"> * </span>
+         <input type="date"  placeholder="YYYY/MM/DD" required name="DOB" value="" class="form-control input-sm DATES">
+</div>    
+
+  <div class="form-group">
+<label class="control-label text-dark" for="age" >AGE</label><span style="color: red;"> * </span>
+        <input type="number" required name="age" value="" min="15" max="50" class="form-control"   placeholder="Enter Age">
+     </div>      
+
+    <div class="form-group">
+<label class="control-label text-dark" for="ADDRESS">Address 1</label><span style="color: red;"> * </span>
+        <textarea name="address1" value="" rows="5" style="resize:none;" class="form-control" placeholder="Full Address  ( In CAPITAL )"></textarea>
+       </div>
+ 
+      <div class="form-group">
+<label class="control-label text-dark" for="ADDRESS">Address 2</label>
+        <textarea name="address2" rows="5" style="resize:none;"class="form-control" placeholder="Apartment, studio, or floor"></textarea>
+       </div>
+
+ <div class="form-group">
+     <label class="control-label text-dark" for="district">DISTRICT</label><span style="color: red;"> * </span>
+<select  required   name="district" class="form-control input-sm">
+   
+         <option value="">Choose</option>
+<option value="Ariyalur">Ariyalur</option>
+<option value="Chengalpattu">Chengalpattu</option>
+        <option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Cuddalore">Cuddalore</option>
+        <option value="Dharmapuri">Dharmapuri</option>
+<option value="Dindigul">Dindigul</option>
+<option value="Erode">Erode</option>
+        <option value="Kallakurichi">Kallakurichi</option>
+<option value="Kanchipuram">Kanchipuram</option>
+        <option value="Kanyakumari">Kanyakumari</option>
+        <option value="Karur">Karur</option>
+        <option value="Krishnagiri">Krishnagiri</option>
+        <option value="Madurai">Madurai</option>
+        <option value="Nagapattinam">Nagapattinam</option>
+        <option value="Namakkal">Namakkal</option>
+<option value="Nilgiris">Nilgiris</option>
+        <option value="Perambalur">Perambalur</option>
+<option value="Pudukkottai">Pudukkottai</option>
+        <option value="Ramanathapuram">Ramanathapuram</option>
+<option value="Ranipet">Ranipet</option>
+        <option value="Salem">Salem</option>
+<option value="Sivaganga">Sivaganga</option>
+        <option value="Tenkasi">Tenkasi</option>
+<option value="Thanjavur">Thanjavur</option>
+        <option value="Theni">Theni </option>
+<option value="Thoothukudi">Thoothukudi</option>
+        <option value="Tiruchirappalli">Tiruchirappalli</option>
+<option value="Tirunelveli">Tirunelveli</option>
+        <option value="Tirupathur">Tirupathur</option>
+<option value="Tiruppur">Tiruppur</option>
+        <option value="Tiruvallur">Tiruvallur</option>
+<option value="Tiruvannamalai">Tiruvannamalai</option>
+        <option value="Tiruvarur">Tiruvarur</option>
+<option value="Vellore">Vellore</option>
+        <option value="Viluppuram">Viluppuram</option>
+<option value="Virudhunagar">Virudhunagar</option>
+          <option></option>
+      </select>
+    </div>
+       
+     
+  <div class="form-group">
+<label class="control-label text-dark" for="aadhar" >AADHAR NUMBER</label><span style="color: red;"> * </span>
+        <input type="number"  name="aadhar" value="" min="100000000000" max="999999999999" class="form-control"   placeholder="xxxx xxxx xxxx">
+     </div>      
+
+
+   <div class="form-group">
+<label class="control-label text-dark" for="CONTACT_1" >CONTACT NUMBER-1</label><span style="color: red;"> * </span>
+        <input type="number"  name="contact1" value="" class="form-control"  min="6000000000" max="9999999999" placeholder="Enter Contact 1">
+     </div>
+  <div class="form-group">
+<label class="control-label text-dark" for="CONTACT_2" >CONTACT NUMBER-2</label>
+        <input type="number"  name="contact2" class="form-control" placeholder="Enter Contact 2    (Ex : Second number/telephone)">
+    </div>
+
+     
+  <div class="form-group">
+      <label class="control-label text-dark" for="email">E-MAIL ID</label><span style="color: red;"> * </span>
+      <input type="email" class="form-control" placeholder="Enter E-mail id" value="" name="email" required class="form-control input-sm">
+    </div>
+ 
+
+<div class="form-group">
+<label class="control-label text-dark" for="father">FATHER NAME</label><span style="color: red;"> * </span>
+<input type="text" placeholder="Enter Father Name ( In CAPITAL )"  name="fname"  class="form-control input-sm">
+</div>
+
+
+<div class="form-group">
+<label class="control-label text-dark" for="mom">MOTHER NAME</label><span style="color: red;"> * </span>
+<input type="text" placeholder="Enter Mother Name ( In CAPITAL )"  name="mname"  class="form-control input-sm">
+</div>
+
+
+<div class="form-group">
+<label class="control-label text-dark" for="guardian">GUARDIAN NAME</label>
+<input type="text" placeholder="Enter Guardian Name" name="guardianname"  class="form-control input-sm">
+</div>
+
+
+<div class="form-group">
+<label class="control-label text-dark" for="fatheroccupation">FATHER OCCUPATION</label><span style="color: red;"> * </span>
+<input type="text" placeholder="Enter Father Name" required name="fatheroccupation"  class="form-control input-sm">
+</div>
+
+
+<div class="form-group">
+<label class="control-label text-dark" for="momoccupation">MOTHER OCCUPATION</label><span style="color: red;"> * </span>
+<input type="text" placeholder="Enter Mother Name" required name="motheroccupation"  class="form-control input-sm">
+</div>
+
+   <div class="form-group">
+<label class="control-label text-dark" for="parentcontact" >PARENT'S CONTACT NUMBER</label><span style="color: red;"> * </span>
+        <input type="number"  name="pcontact" value="" class="form-control"  min="6000000000" max="9999999999"  placeholder="Enter Father's/Mother's Contact Number">
+     </div>
+
+     <div class="form-group">
+       <label class="control-label text-dark" for="income">PARENT'S ANNUAL INCOME</label><span style="color: red;"> * </span>
+       <input type="number" required name="income" value="" maxlength="10"  class="form-control" placeholder="parent's annual income">
+      </div>
+
+<div class="form-group">
+       <label class="control-label text-dark" >SSLC (10TH) MARK</label><span style="color: red;"> * </span>
+       <input type="number" name="sslcm" value=""  class="form-control" placeholder="Marks ">
+      </div>
+
+       <div class="form-group">
+       <label class="control-label text-dark" >SSLC (10TH) %  </label><span style="color: red;"> * </span>
+       <input type="text" name="sslc" value=""   class="form-control" placeholder="Marks in Percentage  ( no round off )">
+      </div>
+
+ <div class="form-group">
+         <label class="control-label text-dark" for="sslcd">DAY OF PASSING ( 10TH )</label><span style="color: red;"> * </span>
+         <input type="month"  placeholder="YYYY/MM/DD" name="sslcd" value="" class="form-control input-sm DATES">
+</div> 
+
+ <div class="form-group">
+       <label class="control-label text-dark" >SSLC (10TH) MEDIUM</label><span style="color: red;"> * </span>
+       <input type="text" required name="sslcme" value="" class="form-control" placeholder="TAMIL / ENGLISH">
+      </div>
+
+<div class="form-group">
+       <label class="control-label text-dark" >HSC (12TH) MARK</label><span style="color: red;"> * </span>
+       <input type="number" required name="hscm" value="" class="form-control" placeholder="Marks">
+      </div>
+
+   <div class="form-group">
+       <label class="control-label text-dark" >HSC (12TH) %</label><span style="color: red;"> * </span>
+       <input type="text" required name="hsc" value="" class="form-control" placeholder="Marks in Percentage ( no round off )">
+      </div>
+
+<div class="form-group">
+         <label class="control-label text-dark" for="hscd">DAY OF PASSING ( 12TH )</label><span style="color: red;"> * </span>
+         <input type="month"  placeholder="YYYY/MM/DD" name="hscd" value="" class="form-control input-sm DATES">
+</div> 
+
+ <div class="form-group">
+       <label class="control-label text-dark" >HSC (12TH) MEDIUM</label><span style="color: red;"> * </span>
+       <input type="text" name="hscme" value="" class="form-control" placeholder="TAMIL / ENGLISH">
+      </div>
+
+
+<div class="form-group">
+       <label class="control-label text-dark" >DIPLOMA - DEPARTMENT</label>
+       <input type="text" name="dd" value="" class="form-control" placeholder="Department Studied in Diploma">
+      </div>
+
+   <div class="form-group">
+       <label class="control-label text-dark" >DIPLOMA %</label>
+       <input type="text" name="dp" value="" class="form-control" placeholder="Marks in Percentage ( no round off )">
+      </div>
+
+<div class="form-group">
+         <label class="control-label text-dark" for="hscd">DAY OF PASSING ( DIPLOMA )</label>
+         <input type="month"  placeholder="YYYY/MM/DD" name="dda" value="" class="form-control input-sm DATES">
+</div> 
+
+<div class="form-group">
+<label class="control-label text-dark" >GPA DETAILS  </label><span style="color:red;"> [ except unfinshed semesters ] * </span>
+<div class="row">
+  <div class="col">
+    <input type="text" class="form-control" name="sem1" placeholder="SEM1 GPA" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" name="sem2" placeholder="SEM2 GPA" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="text" class="form-control"name="sem3"  placeholder="SEM3 GPA" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" name="sem4" placeholder="SEM4 GPA" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="text" class="form-control" name="sem5" placeholder="SEM5 GPA" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" name="sem6" placeholder="SEM6 GPA" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="text" class="form-control" name="sem7" placeholder="SEM7 GPA" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" name="sem8" placeholder="SEM8 GPA" aria-label="Last name">
+  </div>
+
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label text-dark" >NUMBER OF ARREARS  </label><span style="color:red;"> [ except unfinshed semesters ] * </span>
+<div class="row">
+  <div class="col">
+    <input type="number" class="form-control" name="asem1" placeholder="SEM-1" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number" class="form-control" name="asem2" placeholder="SEM-2" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number" class="form-control"name="asem3"  placeholder="SEM-3" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number" class="form-control" name="asem4" placeholder="SEM-4" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number" class="form-control" name="asem5" placeholder="SEM-5" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="numer" class="form-control" name="asem6" placeholder="SEM-6" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number" class="form-control" name="asem7" placeholder="SEM-7" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number" class="form-control" name="asem8" placeholder="SEM-8" aria-label="Last name">
+  </div>
+
+</div>
+</div>
+
+
+   <div class="form-group">
+       <label class="control-label text-dark" >CGPA</label><span style="color: red;"> [ till your previous semester ] * </span>
+       <input type="text"  name="cgpa" value="" required min="0" max="10" class="form-control" placeholder="Enter CGPA  ( Within (1-10) )">
+      </div>
+      <div class="form-group">
+        <label class="control-label text-dark" >CGPA (B.E) %</label><span style="color: red;"> * </span>
+        <input type="text" name="ug" value="" required class="form-control" placeholder="CGPA in Percentage">
+       </div>
+ 
+
+   <div class="form-group">
+       <label class="control-label text-dark" >BREAK OF STUDY</label><span style="color: red;"> * </span>
+       <input type="text" name="bos" value="" required class="form-control" placeholder="YES / NO ( In CAPITAL )">
+      </div>
+
+  <div class="form-group">
+       <label class="control-label text-dark" >IF YES DETAILS</label>
+       <input type="text"  name="iyd" value=""  class="form-control" placeholder="Enter Details ( In CAPITAL )">
+      </div>
+
+ <div class="form-group">
+       <label class="control-label text-dark" >HOSTELLER / DAYS SCHOLAR</label><span style="color: red;"> * </span>
+       <input type="text" name="hord" value="" required class="form-control" placeholder="hosteller / days scholar ( In CAPITAL )">
+      </div>
+
+<div class="form-group">
+<label class="control-label text-dark" for="pd">PHYSICALLY DISABLED</label><span style="color: red;"> * </span>
+<select name="physical" required class="form-control input-sm">
+            <option value="">Choose</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<div class="form-group">
+<label class="control-label text-dark" for="fg">FIRST GRADUATE</label><span style="color: red;"> * </span>
+<select name="fg" required class="form-control input-sm">
+            <option value="">Choose Yes / No</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<div class="form-group">
+<label class="control-label text-dark" for="fg">ARE YOU NEED PLACEMENT TRAINING ? </label><span style="color: red;"> * </span>
+<select name="need" required class="form-control input-sm">
+            <option value="">Choose Yes / No</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="true" required id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault"><h5 style="color:brown;font-family:arial;">
+    I hereby declare that the information provided above by me, are true to best of my knowledge</h5>
+  </label>
+</div>
+
+
+    <br>  <center>
+ <div class="form-group">
+   <button type="submit"  onclick="placement.php" name="submit" id="submit" class="btn btn-success">SUBMIT</button>
+     </div>
+    </center>
+     
+
+</form>
+</div>    
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman';
+}
+#fpage {
+    background: linear-gradient(rgba(0,0,0,0.5),skyblue),url(ucea.jpg);
+    background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+   	
+}
+.logo{
+	width: 110px;
+	position: absolute;
+	top: 4%;
+	left: 5%;
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 230px;
+}
+.banner-text h1{
+	font-size: 110px;    
+    background-size: cover;
+    background-position: center;
+}
+.banner-text p{
+	font-size: 20px;
+	font-style: italic;
+	font-family: fantasy;
+	letter-spacing: 2px;    
+    background-size: cover;
+    background-position: center;
+}
+.banner-btn{
+	margin: 70px auto 0;
+    padding-bottom: 50px;
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: #000;
+}
+#login{
+	background: linear-gradient(rgba(0,0,0,0.5),skyblue),url(college1.jpg);
+	background-size:cover ;
+	background-position:center;
+    background-attachment: fixed;
+}
+.ucealogo{
+	width: 100px;
+	position: absolute;
+	top: 2%;
+	left: 3%;
+}
+.loginbanner{
+	padding-left: 125px;
+	color: lightgoldenrodyellow;
+	padding-top: 22px;
+	padding-bottom: 20px;
+    text-shadow:2px 2px 3px #000000;
+    
+} 
+.loginbanner h1{
+	font-size: 45px;
+	margin-top: 5px;
+    text-align: center;
+    background-attachment: fixed;
+}
+.loginbanner p{
+    line-height: 1.5em;
+    font-size: 25px;
+	font-family: serif;
+	letter-spacing: 2px;
+	color: gainsboro;
+	text-align: center;
+}
+#stafflogin form {
+    margin-top: 0em;
+}
+#stulogin form {
+    margin-top: 0em;
+}
+#sections{
+    margin-top: 80px;
+    display:flex;
+
+}
+.stalogin{
+    display: flex;
+    margin-left: 280px;	
+}
+.studentlogin{
+    display: flex;
+    margin-left: 200px;
+}
+.fieldset1 {
+    text-align: center;
+    border: none;
+}
+.fieldset2{
+    text-align:center;
+    border: none;
+}
+#stafflogin form .fieldset1 {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+#stulogin form .fieldset2 {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+}
+#stafflogin form .user {
+    background: url(user.png) no-repeat;
+}
+#stafflogin form .loc {
+    background: url(lock.jpg) no-repeat;
+}
+#stulogin form .user {
+    background: url(user.png) no-repeat;
+}
+#stulogin form .cal {
+    background: url(cal.png) no-repeat;
+}
+#stulogin form .reg{
+	font-size: 20px;
+    color: red;
+}
+#stafflogin form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    color: #606468;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+#stulogin form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    color: #606468;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+#stafflogin form input[type="text"] {
+    color: #052E59;
+    font-size: 16px;
+    background-color: #E2E5D5;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 198px;
+}
+#stafflogin form input[type="password"]{
+	color: #052E59;
+    font-size: 16px;
+    background-color: #E2E5D5;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 1em;
+    padding: 0 16px;
+	width:198px ;
+}
+#stulogin form input[type="text"] {
+    color: #052E59;
+    font-size: 16px;
+    background-color: #E2E5D5;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 198px;
+}
+#stulogin form input[type="date"] {
+    color: #052E59;
+    font-size: 16px;
+    background-color: #E2E5D5;
+    border-radius: 0px 3px 3px 0px;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 198px;
+}
+#stafflogin form input {
+    height: 50px;
+}
+#stulogin form input {
+    height: 50px;
+}
+#stafflogin form input {
+    border: none;
+    font-family:sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+}
+#stulogin form input {
+    border: none;
+    font-family:sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+}
+#stafflogin form p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#stulogin form p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#stafflogin form p {
+    line-height: 1.5em;
+}
+#stulogin form p {
+    line-height: 1.5em;
+}
+#stafflogin form p {
+    margin: 0px;
+    padding: 0px;
+}
+#stulogin form p {
+    margin: 0px;
+    padding: 0px;
+}
+#stafflogin form input[type="submit"] {
+    border-radius: 3px;
+    background-color: #979797;
+    color: #eee;
+    font-weight: bold;
+    margin-bottom: 5em;
+    text-transform: uppercase;
+    width: 280px;
+}
+#stulogin form input[type="submit"] {
+    border-radius: 3px;
+    background-color: #979797;
+    color: #eee;
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    width: 280px;
+}
+@media screen and (max-width:1200px) {
+    .stalogin{
+        margin-left: 150px;
+    }.stulogin{
+        margin-left: 90px;
+    }
+    .loginbanner  h1{
+        text-align: center;
+    }
+    .loginbanner  p{
+        text-align: center;
+    }             
+    #login{
+        background: linear-gradient(rgba(0,0,0,0.5),skyblue),url(college1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+}
+@media screen and (max-width:700px) {
+    .stalogin{
+        margin-left: 50px;
+    }.stulogin{
+        margin-left: 60px;
+    }
+    .loginbanner  h1{
+        text-align: center;
+    }
+    .loginbanner  p{
+        text-align: center;
+    }             
+    #login{
+        background: linear-gradient(rgba(0,0,0,0.5),skyblue),url(college1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;        
+    }
+}
+
